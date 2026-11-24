@@ -1,0 +1,16 @@
+node_modules/
+dist/
+build/
+coverage/
+.turbo/
+*.tsbuildinfo
+.env
+.env.local
+.env.*.local
+.DS_Store
+*.log
+.ehpk-cache/
+*.ehpk
+demo/frames/_tmp/
+demo/frames/concat.txt
+apps/glass/dist/
