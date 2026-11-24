@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brief — pair your glasses</title>
+  <style>
+    :root { color-scheme: dark; --bg: #0b0d0c; --ink: #d7f7d0; --muted: #8aa88a; --line: #1d2a1d; --accent: #9dff8a; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 16px/1.5 ui-sans-serif, system-ui, sans-serif; background: var(--bg); color: var(--ink); }
+    main { max-width: 28rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+    h1 { font-size: 1.4rem; letter-spacing: 0.08em; margin: 0 0 0.35rem; }
+    p { color: var(--muted); }
+    label { display: block; font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 1.25rem 0 0.4rem; }
+    input { width: 100%; padding: 0.8rem 0.9rem; border: 1px solid var(--line); background: #111411; color: var(--ink); font: inherit; letter-spacing: 0.28em; text-transform: uppercase; }
+    button { margin-top: 1rem; width: 100%; border: 0; padding: 0.85rem; background: var(--accent); color: #062006; font: 600 1rem/1 ui-sans-serif, system-ui, sans-serif; cursor: pointer; }
+    button.secondary { background: transparent; color: var(--accent); border: 1px solid var(--line); }
+    .card { border: 1px solid var(--line); padding: 1rem; margin-top: 1.25rem; }
+    .ok { color: var(--accent); }
+    .err { color: #ffb4a8; }
+    code { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>BRIEF</h1>
+    <p>Pair Even G2 glasses with a short code, then load a demo Telegram inbox. Nothing is sent until you approve a draft on the glasses.</p>
+    <form id="form">
+      <label for="code">Code shown on the glasses</label>
+      <input id="code" name="code" maxlength="7" autocomplete="off" placeholder="A B 2 K" required />
+      <button type="submit">Start demo inbox</button>
+    </form>
+    <p id="status"></p>
+    <div class="card">
+      <p>After pairing, the glasses show three or four unread highlights. Tap to open, tap again to draft, tap once more to send. Swipe to move. Double-tap the home briefing to exit.</p>
+      <p>Live Telegram Bot API is optional and is configured on the server, not in this page.</p>
+    </div>
+  </main>
+  <script>
+    const api = "{{PUBLIC_URL}}";
+    const form = document.getElementById("form");
+    const status = document.getElementById("status");
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      status.textContent = "Pairing…";
+      status.className = "";
+      try {
+        const res = await fetch(api + "/v1/pair/complete", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({ code: document.getElementById("code").value, mode: "demo" }),
+        });
+        const body = await res.json();
+        if (!res.ok) throw new Error(body.error || "pairing failed");
+        status.className = "ok";
+        status.textContent = "Paired in demo mode. Look up at the glasses — your briefing is ready.";
+      } catch (err) {
+        status.className = "err";
+        status.textContent = err.message || String(err);
+      }
+    });
+  </script>
+</body>
+</html>
