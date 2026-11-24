@@ -1,0 +1,425 @@
+{
+  "01-pair": {
+    "menu": [],
+    "texts": [
+      {
+        "id": 1,
+        "name": "header",
+        "x": 0,
+        "y": 0,
+        "width": 576,
+        "height": 56,
+        "content": "BRIEF",
+        "textColor": 3,
+        "capture": false
+      },
+      {
+        "id": 2,
+        "name": "body",
+        "x": 0,
+        "y": 56,
+        "width": 576,
+        "height": 188,
+        "content": "Open this on your phone\n127.0.0.1:8787\n\nA B 2 K\n\nthen start the demo inbox",
+        "textColor": 4,
+        "capture": true
+      },
+      {
+        "id": 3,
+        "name": "footer",
+        "x": 0,
+        "y": 244,
+        "width": 576,
+        "height": 44,
+        "content": "waiting for pair",
+        "textColor": 2,
+        "capture": false
+      }
+    ]
+  },
+  "02-brief": {
+    "menu": [
+      {
+        "id": 1,
+        "name": "Draft reply"
+      },
+      {
+        "id": 2,
+        "name": "Listen"
+      },
+      {
+        "id": 3,
+        "name": "Next"
+      },
+      {
+        "id": 4,
+        "name": "Mark seen"
+      }
+    ],
+    "texts": [
+      {
+        "id": 1,
+        "name": "header",
+        "x": 0,
+        "y": 0,
+        "width": 576,
+        "height": 56,
+        "content": "BRIEF                    18:05\n4 unread · Telegram",
+        "textColor": 3,
+        "capture": false
+      },
+      {
+        "id": 2,
+        "name": "body",
+        "x": 0,
+        "y": 56,
+        "width": 576,
+        "height": 188,
+        "content": "▶Ada           are we still on f…\n #ton resear…  mainnet window sl…\n Design Guild  can you review th…",
+        "textColor": 4,
+        "capture": true
+      },
+      {
+        "id": 3,
+        "name": "footer",
+        "x": 0,
+        "y": 244,
+        "width": 576,
+        "height": 44,
+        "content": "tap open  ·  swipe next  ·  hold menu",
+        "textColor": 2,
+        "capture": false
+      }
+    ]
+  },
+  "03-brief-next": {
+    "menu": [
+      {
+        "id": 1,
+        "name": "Draft reply"
+      },
+      {
+        "id": 2,
+        "name": "Listen"
+      },
+      {
+        "id": 3,
+        "name": "Next"
+      },
+      {
+        "id": 4,
+        "name": "Mark seen"
+      }
+    ],
+    "texts": [
+      {
+        "id": 1,
+        "name": "header",
+        "x": 0,
+        "y": 0,
+        "width": 576,
+        "height": 56,
+        "content": "BRIEF                    18:05\n4 unread · Telegram",
+        "textColor": 3,
+        "capture": false
+      },
+      {
+        "id": 2,
+        "name": "body",
+        "x": 0,
+        "y": 56,
+        "width": 576,
+        "height": 188,
+        "content": " Ada           are we still on f…\n▶#ton resear…  mainnet window sl…\n Design Guild  can you review th…",
+        "textColor": 4,
+        "capture": true
+      },
+      {
+        "id": 3,
+        "name": "footer",
+        "x": 0,
+        "y": 244,
+        "width": 576,
+        "height": 44,
+        "content": "tap open  ·  swipe next  ·  hold menu",
+        "textColor": 2,
+        "capture": false
+      }
+    ]
+  },
+  "04-thread": {
+    "menu": [
+      {
+        "id": 1,
+        "name": "Draft reply"
+      },
+      {
+        "id": 2,
+        "name": "Listen"
+      },
+      {
+        "id": 3,
+        "name": "Next"
+      },
+      {
+        "id": 4,
+        "name": "Mark seen"
+      }
+    ],
+    "texts": [
+      {
+        "id": 1,
+        "name": "header",
+        "x": 0,
+        "y": 0,
+        "width": 576,
+        "height": 56,
+        "content": "THREAD",
+        "textColor": 3,
+        "capture": false
+      },
+      {
+        "id": 2,
+        "name": "body",
+        "x": 0,
+        "y": 56,
+        "width": 576,
+        "height": 188,
+        "content": "Ada · dm\nAda: I'll bring the printed agenda.\nyou: should be\nAda: are we still on for 4?",
+        "textColor": 4,
+        "capture": true
+      },
+      {
+        "id": 3,
+        "name": "footer",
+        "x": 0,
+        "y": 244,
+        "width": 576,
+        "height": 44,
+        "content": "tap draft  ·  swipe next  ·  hold listen",
+        "textColor": 2,
+        "capture": false
+      }
+    ]
+  },
+  "05-draft": {
+    "menu": [
+      {
+        "id": 1,
+        "name": "Draft reply"
+      },
+      {
+        "id": 2,
+        "name": "Listen"
+      },
+      {
+        "id": 3,
+        "name": "Next"
+      },
+      {
+        "id": 4,
+        "name": "Mark seen"
+      }
+    ],
+    "texts": [
+      {
+        "id": 1,
+        "name": "header",
+        "x": 0,
+        "y": 0,
+        "width": 576,
+        "height": 56,
+        "content": "DRAFT",
+        "textColor": 3,
+        "capture": false
+      },
+      {
+        "id": 2,
+        "name": "body",
+        "x": 0,
+        "y": 56,
+        "width": 576,
+        "height": 188,
+        "content": "SEND TO ADA? 1/3\n\"Yes — I'll be there.\"",
+        "textColor": 4,
+        "capture": true
+      },
+      {
+        "id": 3,
+        "name": "footer",
+        "x": 0,
+        "y": 244,
+        "width": 576,
+        "height": 44,
+        "content": "tap send  ·  swipe other  ·  hold listen",
+        "textColor": 2,
+        "capture": false
+      }
+    ]
+  },
+  "06-draft-alt": {
+    "menu": [
+      {
+        "id": 1,
+        "name": "Draft reply"
+      },
+      {
+        "id": 2,
+        "name": "Listen"
+      },
+      {
+        "id": 3,
+        "name": "Next"
+      },
+      {
+        "id": 4,
+        "name": "Mark seen"
+      }
+    ],
+    "texts": [
+      {
+        "id": 1,
+        "name": "header",
+        "x": 0,
+        "y": 0,
+        "width": 576,
+        "height": 56,
+        "content": "DRAFT",
+        "textColor": 3,
+        "capture": false
+      },
+      {
+        "id": 2,
+        "name": "body",
+        "x": 0,
+        "y": 56,
+        "width": 576,
+        "height": 188,
+        "content": "SEND TO ADA? 2/3\n\"I can do that. I'll be there.\"",
+        "textColor": 4,
+        "capture": true
+      },
+      {
+        "id": 3,
+        "name": "footer",
+        "x": 0,
+        "y": 244,
+        "width": 576,
+        "height": 44,
+        "content": "tap send  ·  swipe other  ·  hold listen",
+        "textColor": 2,
+        "capture": false
+      }
+    ]
+  },
+  "07-listen": {
+    "menu": [
+      {
+        "id": 1,
+        "name": "Draft reply"
+      },
+      {
+        "id": 2,
+        "name": "Listen"
+      },
+      {
+        "id": 3,
+        "name": "Next"
+      },
+      {
+        "id": 4,
+        "name": "Mark seen"
+      }
+    ],
+    "texts": [
+      {
+        "id": 1,
+        "name": "header",
+        "x": 0,
+        "y": 0,
+        "width": 576,
+        "height": 56,
+        "content": "LISTEN",
+        "textColor": 3,
+        "capture": false
+      },
+      {
+        "id": 2,
+        "name": "body",
+        "x": 0,
+        "y": 56,
+        "width": 576,
+        "height": 188,
+        "content": "say a command, or how to reply\n\ntap to stop",
+        "textColor": 4,
+        "capture": true
+      },
+      {
+        "id": 3,
+        "name": "footer",
+        "x": 0,
+        "y": 244,
+        "width": 576,
+        "height": 44,
+        "content": "voice stays on this phone / glasses",
+        "textColor": 2,
+        "capture": false
+      }
+    ]
+  },
+  "08-sent": {
+    "menu": [
+      {
+        "id": 1,
+        "name": "Draft reply"
+      },
+      {
+        "id": 2,
+        "name": "Listen"
+      },
+      {
+        "id": 3,
+        "name": "Next"
+      },
+      {
+        "id": 4,
+        "name": "Mark seen"
+      }
+    ],
+    "texts": [
+      {
+        "id": 1,
+        "name": "header",
+        "x": 0,
+        "y": 0,
+        "width": 576,
+        "height": 56,
+        "content": "SENT",
+        "textColor": 3,
+        "capture": false
+      },
+      {
+        "id": 2,
+        "name": "body",
+        "x": 0,
+        "y": 56,
+        "width": 576,
+        "height": 188,
+        "content": "Sent to Ada.",
+        "textColor": 4,
+        "capture": true
+      },
+      {
+        "id": 3,
+        "name": "footer",
+        "x": 0,
+        "y": 244,
+        "width": 576,
+        "height": 44,
+        "content": "returning to briefing",
+        "textColor": 2,
+        "capture": false
+      }
+    ]
+  }
+}
