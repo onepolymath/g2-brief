@@ -1,0 +1,27 @@
+{
+  "package_id": "com.onepolymath.brief",
+  "name": "Brief",
+  "version": "0.1.0",
+  "edition": "202601",
+  "min_sdk_version": "0.0.16",
+  "entrypoint": "index.html",
+  "permissions": [
+    {
+      "name": "network",
+      "desc": "Talks to the Brief API to load Telegram briefings, draft replies, and send approved messages.",
+      "whitelist": [
+        "http://127.0.0.1:8787",
+        "http://localhost:8787"
+      ]
+    },
+    {
+      "name": "g2-microphone",
+      "desc": "Captures a short voice command or reply instruction from the Even G2 microphones."
+    },
+    {
+      "name": "phone-microphone",
+      "desc": "Falls back to the phone microphone when glasses capture is unavailable."
+    }
+  ],
+  "supported_languages": ["en"]
+}
